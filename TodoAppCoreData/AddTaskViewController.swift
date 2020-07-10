@@ -14,6 +14,8 @@ class AddTaskViewController: UIViewController {
     
     @IBOutlet weak var isImportant: UISwitch!
     
+    @IBOutlet weak var dateField: UIDatePicker!
+    
     @IBAction func btnTapped(_ sender: Any) {
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -21,6 +23,7 @@ class AddTaskViewController: UIViewController {
         let task = Task(context: context)
         task.name = textField.text!
         task.isImportant = isImportant.isOn
+        task.date = dateField.date
 
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         navigationController!.popViewController(animated: true)

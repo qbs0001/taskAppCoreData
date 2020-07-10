@@ -76,10 +76,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPx-BT-qEc">
-                                <rect key="frame" x="182.5" y="243" width="51" height="52"/>
+                                <rect key="frame" x="182.5" y="243" width="51" height="31"/>
                             </switch>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5RG-qy-h2v">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkH-6I-yZO">
-                                <rect key="frame" x="168.5" y="347" width="77" height="30"/>
+                                <rect key="frame" x="168.5" y="606" width="77" height="30"/>
                                 <state key="normal" title="タスク追加"/>
                                 <connections>
                                     <action selector="btnTapped:" destination="PKD-2Z-pit" eventType="touchUpInside" id="Zqa-WF-RUs"/>
@@ -89,20 +92,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="iPx-BT-qEc" firstAttribute="centerX" secondItem="sgf-0b-i9b" secondAttribute="centerX" id="1cd-6I-hS7"/>
+                            <constraint firstItem="5RG-qy-h2v" firstAttribute="width" secondItem="iPx-BT-qEc" secondAttribute="height" multiplier="414:31" id="1dG-Hs-Y6J"/>
                             <constraint firstItem="sgf-0b-i9b" firstAttribute="leading" secondItem="xca-yg-96t" secondAttribute="leading" constant="50" id="37i-va-zlM"/>
                             <constraint firstItem="sgf-0b-i9b" firstAttribute="centerX" secondItem="DEm-cs-mf0" secondAttribute="centerX" id="3Uc-sB-Y8y"/>
-                            <constraint firstItem="hkH-6I-yZO" firstAttribute="width" secondItem="iPx-BT-qEc" secondAttribute="height" multiplier="46:31" id="8Jh-Xb-w9o"/>
                             <constraint firstItem="xca-yg-96t" firstAttribute="trailing" secondItem="sgf-0b-i9b" secondAttribute="trailing" constant="50" id="ASS-0T-Xn9"/>
                             <constraint firstItem="sgf-0b-i9b" firstAttribute="top" secondItem="xca-yg-96t" secondAttribute="top" constant="80" id="BA0-XN-iyZ"/>
+                            <constraint firstItem="hkH-6I-yZO" firstAttribute="centerX" secondItem="5RG-qy-h2v" secondAttribute="centerX" id="P5d-he-elT"/>
                             <constraint firstItem="iPx-BT-qEc" firstAttribute="top" secondItem="sgf-0b-i9b" secondAttribute="bottom" constant="41" id="PB0-uR-oli"/>
-                            <constraint firstItem="hkH-6I-yZO" firstAttribute="top" secondItem="iPx-BT-qEc" secondAttribute="bottom" constant="52" id="USr-Ph-ZVY"/>
+                            <constraint firstItem="5RG-qy-h2v" firstAttribute="centerX" secondItem="iPx-BT-qEc" secondAttribute="centerX" id="XeM-6M-tzn"/>
                             <constraint firstItem="iPx-BT-qEc" firstAttribute="width" secondItem="sgf-0b-i9b" secondAttribute="height" multiplier="49:34" id="dn5-Bp-Hq7"/>
-                            <constraint firstItem="hkH-6I-yZO" firstAttribute="centerX" secondItem="iPx-BT-qEc" secondAttribute="centerX" id="plf-ZT-bbK"/>
+                            <constraint firstItem="hkH-6I-yZO" firstAttribute="width" secondItem="5RG-qy-h2v" secondAttribute="height" multiplier="77:216" id="mDr-f5-ZQ0"/>
+                            <constraint firstItem="hkH-6I-yZO" firstAttribute="top" secondItem="5RG-qy-h2v" secondAttribute="bottom" constant="50" id="qDo-Tc-kB8"/>
+                            <constraint firstItem="5RG-qy-h2v" firstAttribute="top" secondItem="iPx-BT-qEc" secondAttribute="bottom" constant="66" id="wqK-T4-jhY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xca-yg-96t"/>
                     </view>
                     <navigationItem key="navigationItem" id="SUQ-Dv-1P9"/>
                     <connections>
+                        <outlet property="dateField" destination="5RG-qy-h2v" id="rGo-ui-Qfk"/>
                         <outlet property="isImportant" destination="iPx-BT-qEc" id="7CU-Uq-x3a"/>
                         <outlet property="textField" destination="sgf-0b-i9b" id="0w7-wf-VBR"/>
                     </connections>

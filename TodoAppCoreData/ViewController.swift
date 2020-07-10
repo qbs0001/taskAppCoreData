@@ -28,12 +28,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy年MM月dd日"
         //スイッチオンのデータは、頭に星をつける
         if task.isImportant{
-            cell.textLabel?.text = "⭐️" + task.name!
+            cell.textLabel?.text = "⭐️" + task.name! + " : \(formatter.string(from: task.date!))"
         } else {
-            cell.textLabel?.text = task.name!
+            cell.textLabel?.text = task.name! +  " : \(formatter.string(from: task.date!))"
         }
+        
         return cell
     }
 
