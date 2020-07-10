@@ -14,6 +14,7 @@
 		26D28FE024B6E54C003B6699 /* TodoAppCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26D28FDE24B6E54C003B6699 /* TodoAppCoreData.xcdatamodeld */; };
 		26D28FE224B6E54D003B6699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D28FE124B6E54D003B6699 /* Assets.xcassets */; };
 		26D28FE524B6E54D003B6699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D28FE324B6E54D003B6699 /* LaunchScreen.storyboard */; };
+		26D28FED24B6E859003B6699 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D28FEC24B6E859003B6699 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		26D28FE124B6E54D003B6699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D28FE424B6E54D003B6699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D28FE624B6E54D003B6699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D28FEC24B6E859003B6699 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				26D28FD524B6E54C003B6699 /* AppDelegate.swift */,
+				26D28FEC24B6E859003B6699 /* AddTaskViewController.swift */,
 				26D28FD724B6E54C003B6699 /* SceneDelegate.swift */,
 				26D28FD924B6E54C003B6699 /* ViewController.swift */,
 				26D28FDB24B6E54C003B6699 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 				26D28FD624B6E54C003B6699 /* AppDelegate.swift in Sources */,
 				26D28FE024B6E54C003B6699 /* TodoAppCoreData.xcdatamodeld in Sources */,
 				26D28FD824B6E54C003B6699 /* SceneDelegate.swift in Sources */,
+				26D28FED24B6E859003B6699 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
